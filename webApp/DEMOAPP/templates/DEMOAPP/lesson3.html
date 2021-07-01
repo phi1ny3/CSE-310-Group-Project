@@ -5,20 +5,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to Lesson 3, Boolean statements and Expressions!</title>
 </head>
 <body>
-    <h1>Further Functions and AJAX</h1>
-    <p> An Immediately Invoked Function Expression– or IIFE – (pronounced 'iffy') is an anonymous function that, 
-    as the name suggests, is invoked as soon as it’s defined. This term is mentioned throughout the chapter a lot so 
-    I decided to include the books definition. It can be used to set up code that won't be used or change again to save time.
-    Chapters dives into a lot of fuctions and expands on how they work and different ways to write them depending on what you want to accomplish.
+    <h1>Boolean Statements</h1>
+    <p>The Python type for storing true and false values is called bool, named after the British mathematician, George Boole. George Boole created Boolean Algebra, which is the basis of all modern computer arithmetic.
+    There are only two boolean values. They are True and False. Capitalization is important, since true and false are not boolean values (Python is case sensitive).
     </p>
+    <h2>Boolean Expressions
     <p>
-    From the Book: "Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading."
-    In 1999 Microsoft implemented from what I understood a method for data to be sent in the background using Javascript
-    and then in 2005 Jesse James Garrett renamed it AJAX. This programs allow data to be sent in an Asynchronous way which means 
-    it doesn't have to stop to wait for the response.
+    A boolean expression is an expression that evaluates to a boolean value. The equality operator, ==, compares two values and produces a boolean value related to whether the two values are equal to one another.
+    The == operator is one of six common comparison operators; the others are:
+    <br>x != y               # x is not equal to y
+    <br>x > y                # x is greater than y
+    <br>x < y                # x is less than y
+    <br>x >= y               # x is greater than or equal to y
+    <br>x <= y               # x is less than or equal to y
+
+    You may be familiar with theses symbols. However, the Python symbols are different from the mathematical symbols. A common error is to use a single equal sign (=) instead of a double equal sign (==). Remember that = is an assignment operator and == is a comparison operator. Also, there is no such thing as =< or =>.
+
+    Note too that an equality test is symmetric, but assignment is not. For example, if a == 7 then 7 == a. But in Python, the statement a = 7 is legal and 7 = a is not.
     </p>
 </body>
 </html>
