@@ -12,4 +12,4 @@ def lesson2(request):
     return render(request,'DEMOAPP/lesson2.html')
 
 def lesson3(request):
-    return render(request,'DEMOAPP/lesson3.html')     
+    return render(request,'DEMOAPP/lesson3.html')
