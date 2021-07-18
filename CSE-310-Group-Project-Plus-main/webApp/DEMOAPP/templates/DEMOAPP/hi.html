@@ -1,0 +1,138 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Web App</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{% static "style/main.css"%}">
+
+
+<body id="bg" style="background-image: url('{% static "images/background2.jpg"%}');">
+
+<h1>Python 101</h1>
+
+
+   <div class="row">
+      <div class="column">
+        <img src= {% static "images/black_background.jpg"%} alt="black" style="width:60%" style="height:40%" class="pictureone">
+       
+        <div class="textone">
+          <a href="{% url 'lesson1'%}" class= "titleone">Lesson 1</a>
+            
+        </div>
+       <pre class= "paragraphone">    <b>INTRODUCTION</b>
+       
+       
+Learn some terms for 
+
+
+programming software, 
+  
+  
+and learn how to make 
+   
+  
+your first program!
+
+
+You will also learn to install
+
+
+VS Code, Python, and Pip!
+        </pre>
+      </div>
+
+
+
+
+      <div class="column">
+        <img src= {% static "images/black_background.jpg"%} alt="black" style="width:60%" style="height:40%" class="picturetwo">
+        <style>
+        .texttwo {
+        position: absolute;
+        top: 76%;
+        width: 30%;
+        text-align: center;
+        }
+        </style>
+        <div class="texttwo">
+          <a href="{% url 'lesson2'%}" class= "titletwo">Lesson 2</a>
+            
+        </div>
+        <style>
+        .paragraphtwo {
+        position: absolute;
+        top: 28%;
+        width: 50%;
+        text-align: left;
+        }
+        </style>
+       <pre class= "paragraphtwo">     <b>             OPERATIONS</b>
+       
+       
+                Learn how
+
+
+                mathematic operations work!
+
+
+                Some of these operations
+
+
+                you may know already,
+
+
+                but be prepared for
+
+  
+                some that you might not!
+      </pre>
+      </div>
+
+      <div class="column">
+        <img src= {% static "images/black_background.jpg"%} alt="black" style="width:60%" style="height:40%" class="picturethree">
+        <style>
+        .text3 {
+        position: absolute;
+        top: 70%;
+        width: 25%;
+        text-align: center;
+        }
+        </style>
+        <div class="text3">
+          <a href="{% url 'lesson3'%}" class= "title3">Lesson 3</a>
+            
+        </div>
+              <style>
+        .paragraph3 {
+        position: absolute;
+        top: 28%;
+        width: 20%;
+        text-align: left;
+        }
+        </style>
+       <pre class= "paragraph3"><b>BOOLEAN STATEMENTS</b>
+
+
+  Learn how 
+
+
+  logic and boolean
+
+
+  statements work!
+
+
+  Get a sneak preview into
+
+
+  if statements too!
+       
+       
+      </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="{% static 'JS/quiz2.js' %}"></script>
+<style>
+img {
+    opacity:.5;
+}
+
+h1 {
+    color: pink;
+}
+</style>
+<body id="bg" style="background-image: url('{% static "images/background2.jpg"%}');">
+    <h1>Welcome to Lesson 2, Operations!</h1>
+<style>
+.body2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: pink;
+}
+</style>
+<div class="body2">
+    <pre>Have you ever used a calculator to work on an equation to double check, or to save time?  In programming, we can learn how to mathematically operate on data too!
+    We should begin by creating a new python program.  First, make sure you have the following:
+    <br>You are probably already familiar with most operations.  However, there are some useful operations that you may not see on a calculator or have worked with. Here are all the basic operations:
+    Addition: +
+    Subtraction: -
+    Multiplication: *
+    Division: /
+    
+    Here are some new ones:
+    Modulus Division: %
+        Remember when you divided a number that wasn't a multiple of the divisor, and you had some remainder?  Modulus Division actually looks for that remainder for the value to return! Neat huh?
+    Eponentiation: **
+        Some might already be familiar with this, but this basically takes the first operand, and multiplies by itself however many times the second operand says.  For example, 2 ** 3 is the same as 2*2*2.
+    Floor Division: //
+        Floor Division returns the floor, or rounded down integer of the division between the first and second operand.  For example, 10 // 3 would result in 3, as opposed to 3.33.
+    </pre>
+    <pre>
+    Make sure to make a filepath that you will remember!  Once you have, create a python file, call it something like "Operations.py".</h3>
+    Once you have done this, Do the following operations:
+    a = 9
+    b = 4
+      
+    # Addition of numbers 
+    add = a + b 
+      
+    # Subtraction of numbers 
+    sub = a - b 
+      
+    # Multiplication of number 
+    mul = a * b 
+      
+    # Division(float) of number 
+    div1 = a / b 
+      
+    # Division(floor) of number 
+    div2 = a // b 
+      
+    # Modulo of both number 
+    mod = a % b 
+      
+    # Power
+    p = a ** b
+      
+    # print results 
+    print(add) 
+    print(sub) 
+    print(mul) 
+    print(div1) 
+    print(div2) 
+    print(mod)
+    print(p)</h3> 
+    <br>Congratulations, you have just learned how to calculate basic operations in Python!
+    </pre>
+
+    <h2 id="test_status"></h2>
+    <div id="test"></div>
+</div>
+    <style>
+.back {
+    font-size: 40px;
+    color: pink;
+}
+</style>
+<div class="back">
+    <a href="{% url 'home-page'%}" class= "back">Back</a>
+            
+</div>
+</body>
+</html>

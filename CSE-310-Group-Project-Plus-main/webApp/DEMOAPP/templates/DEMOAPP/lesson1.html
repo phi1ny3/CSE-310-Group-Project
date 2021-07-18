@@ -1,0 +1,51 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Lesson 1, Hello World!</title>
+</head>
+<script src="{% static 'JS/quiz1.js' %}"></script>
+<body id="bg" style="background-image: url('{% static "images/background2.jpg"%}');">
+<style>
+.body1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: pink;
+}
+</style>
+    <div class = "body1">
+    <h1>Introduction</h1>
+
+    <p>All coders have to start somewhere, and it's always a good idea to make sure your software is working properly. We should begin by creating a new python program.  First, make sure you have the following:
+    <br>-Python 3.9 or 3.10
+    <br>-Pip installer
+    <br>-VS Code
+    </br> VS Code is what is called an IDE (Integrated Development Environment). This is the software that is used to interact with our code.
+    Using VS Code's terminal (Terminal>New Terminal), type "pip install python". This is called the Python shell (interactive interpreter). It is an interactive window where you can enter lines or blocks of code and run them immediately to see their effect and output.
+    </p>
+    <p>
+    Make sure to make a filepath that you will remember!  Once you have, create a python file, call it something like "Hello World.py".
+    Once you have done this, type "print("Hello World")" in the program window above the terminal.  This statement in Python 3 isn't a function (which we'll learn about later), so we don't use a colon after.  We then click Run>Start Debugging.</h3>
+    <br>If you were successful, you should have a message in your terminal that says "Hello World"World.py
+    <br>Congratulations, you have just finished your first lesson!</br>
+    </p>
+    <h2 id="test_status"></h2>
+    <div id="test"></div>
+</div>
+</body>
+</html>
+<style>
+.back {
+    font-size: 40px;
+    color: pink;
+}
+</style>
+<div class="back">
+    <a href="{% url 'home-page'%}" class= "back">Back</a>
+            
+</div>
+</body>
+</html>
