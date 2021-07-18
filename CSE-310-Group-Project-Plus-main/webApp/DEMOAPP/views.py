@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
+# Views here for pages to be pulled based on events
 def hi(request) :
     return render(request, 'DEMOAPP/hi.html')
 

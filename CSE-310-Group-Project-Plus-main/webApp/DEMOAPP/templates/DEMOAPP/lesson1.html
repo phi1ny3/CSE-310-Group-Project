@@ -1,5 +1,5 @@
 {%load static %}
-
+{% comment %} Lesson 1 {% endcomment %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +35,7 @@
     <br>If you were successful, you should have a message in your terminal that says "Hello World"World.py
     <br>Congratulations, you have just finished your first lesson!</br>
     </p>
+    {% comment %} These pull from the quiz files {% endcomment %}
     <h2 id="test_status"></h2>
     <div id="test"></div>
 </div>
@@ -46,6 +47,7 @@
     color: white;
 }
 </style>
+{% comment %} Link back to home page {% endcomment %}
 <div class="back">
     <a href="{% url 'home-page'%}" class= "back">Back</a>
             

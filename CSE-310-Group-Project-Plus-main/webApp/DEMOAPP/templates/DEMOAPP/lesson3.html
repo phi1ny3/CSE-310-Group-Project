@@ -1,6 +1,7 @@
 {%load static %}
 
 <!DOCTYPE html>
+{% comment %} Lesson 3 {% endcomment %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,6 +36,7 @@
 
     Note too that an equality test is symmetric, but assignment is not. For example, if a == 7 then 7 == a. But in Python, the statement a = 7 is legal and 7 = a is not.
     </p>
+    {% comment %} Pulls from test {% endcomment %}
     <h2 id="test_status"></h2>
     <div id="test"></div>
 </div>
@@ -44,6 +46,7 @@
     color: white;
 }
 </style>
+{% comment %} Link back to home page {% endcomment %}
 <div class="back">
     <a href="{% url 'home-page'%}" class= "back">Back</a>
             

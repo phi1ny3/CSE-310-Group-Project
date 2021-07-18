@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-
+# Enables linking among pages
 urlpatterns = [
     path('', views.hi, name='home-page'),
     path('lesson1', views.lesson1, name='lesson1'),

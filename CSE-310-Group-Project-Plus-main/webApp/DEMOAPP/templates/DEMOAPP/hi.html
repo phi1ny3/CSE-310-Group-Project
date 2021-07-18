@@ -1,5 +1,5 @@
 {%load static %}
-
+{% comment %} Our home page! {% endcomment %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,17 +9,18 @@
 </head>
 <link rel="stylesheet" type="text/css" href="{% static "style/main.css"%}">
 
-
+{% comment %} background image {% endcomment %}
 <body id="bg" style="background-image: url('{% static "images/background2.jpg"%}');">
 
 <h1>Python 101</h1>
 
-
+{% comment %} Each of these has a black tab behind it for visibility {% endcomment %}
    <div class="row">
       <div class="column">
         <img src= {% static "images/black_background.jpg"%} alt="black" style="width:60%" style="height:40%" class="pictureone">
        
         <div class="textone">
+        {% comment %} Link to Lesson 1 {% endcomment %}
           <a href="{% url 'lesson1'%}" class= "titleone">Lesson 1</a>
             
         </div>
@@ -50,6 +51,7 @@ VS Code, Python, and Pip!
 
       <div class="column">
         <img src= {% static "images/black_background.jpg"%} alt="black" style="width:60%" style="height:40%" class="picturetwo">
+        {% comment %} Style adjustments {% endcomment %}
         <style>
         .texttwo {
         position: absolute;
@@ -59,9 +61,11 @@ VS Code, Python, and Pip!
         }
         </style>
         <div class="texttwo">
+        {% comment %} Link to lesson 2 {% endcomment %}
           <a href="{% url 'lesson2'%}" class= "titletwo">Lesson 2</a>
             
         </div>
+        {% comment %} More style adjustments {% endcomment %}
         <style>
         .paragraphtwo {
         position: absolute;
@@ -94,6 +98,7 @@ VS Code, Python, and Pip!
 
       <div class="column">
         <img src= {% static "images/black_background.jpg"%} alt="black" style="width:60%" style="height:40%" class="picturethree">
+        {% comment %} Style Adjustments.  We wanted to make sure these were easier to align based on absolute position {% endcomment %}
         <style>
         .text3 {
         position: absolute;
@@ -102,6 +107,7 @@ VS Code, Python, and Pip!
         text-align: center;
         }
         </style>
+        {% comment %} Link to lesson 3 {% endcomment %}
         <div class="text3">
           <a href="{% url 'lesson3'%}" class= "title3">Lesson 3</a>
             
